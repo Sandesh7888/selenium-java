@@ -1,0 +1,27 @@
+package com.sandesh.me;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Sadbasics_Exp_4Locators {
+	
+	WebDriver driver;
+	public void Launch() throws InterruptedException {
+		driver = new ChromeDriver();
+		driver.get("https://amazon.in");
+		Thread.sleep(2000);
+		driver.manage().window().maximize();
+	}
+	
+	public void sendData() {
+		driver.findElement(By.id("twobartextserachbar")).sendKeys("I phone 15 pro max");
+		
+	}
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

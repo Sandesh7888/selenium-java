@@ -1,0 +1,10 @@
+# Ignore large or unnecessary files
+*.exe
+*.zip
+*.pdf
+chrome-win64/
+edgedriver_win64/
+geckodriver-v0.36.0-win-aarch64/
+selenium-java-4.38.0/
+target/
+.idea/

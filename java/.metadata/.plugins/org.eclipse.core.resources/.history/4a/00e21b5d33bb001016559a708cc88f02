@@ -1,0 +1,13 @@
+package com.me;
+
+public class FirstDemo {
+	
+	public void LunchAut() {
+		System.setProperties("");
+		
+	}
+	
+	public static void main(String []arg) {
+		
+	}
+}

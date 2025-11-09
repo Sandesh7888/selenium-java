@@ -1,0 +1,30 @@
+package com.me;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class FirstDemo {
+    
+    public void launchAut() {
+        // Correct property path: must point to the chromedriver.exe file, not the chrome folder
+        System.setProperty("webdriver.chrome.driver", 
+            "\"C:\\Users\\sande\\OneDrive\\Desktop\\selenium\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+        
+        // Create the WebDriver instance
+        WebDriver driver = new ChromeDriver();
+        
+        // Open a test site to verify
+        driver.get("https://www.google.com");
+        
+        // Optional: maximize the window
+        driver.manage().window().maximize();
+        
+        // Optional: print the page title
+        System.out.println("Title: " + driver.getTitle());
+    }
+    
+    public static void main(String[] args) {
+        FirstDemo demo = new FirstDemo();
+        demo.launchAut();
+    }
+}
