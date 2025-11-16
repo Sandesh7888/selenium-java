@@ -5,7 +5,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class AlterBox {
-
+	WebDriver driver ;
+	String url="";
+	public void launch() throws InterruptedException {
+		driver=new ChromeDriver();
+		driver.get(url);
+		Thread.sleep(2000);
+		driver.manage().window().maximize();
+		
+	}
 	public void ClikeOK() throws InterruptedException {
 		driver.findElement(By.linkText("Reset")).click();
 		Thread.sleep(2000);
