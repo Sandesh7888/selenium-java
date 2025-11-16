@@ -1,0 +1,19 @@
+package Object_Repo;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class POM {
+
+	WebDriver driver;
+	
+	public void launch() {
+		driver=new ChromeDriver();
+	}
+	
+	public static void main(String[] args) {
+		
+
+	}
+
+}

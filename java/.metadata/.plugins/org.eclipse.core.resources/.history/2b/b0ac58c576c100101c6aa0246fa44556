@@ -1,0 +1,35 @@
+package com.action;
+
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class Enter {
+	
+	WebDriver driver;
+	Actions actobj;
+	public void launch() throws InterruptedException {
+		driver=new ChromeDriver();
+		driver.get("https://www.flipkart.com/");
+		Thread.sleep(2000);
+
+		driver.manage().window().maximize();
+	
+	
+		actobj =new Actions(driver);
+	    actobj.sendKeys(Keys.ESCAPE).perform();
+		
+	}
+	public void senddata() {
+		
+	}
+
+	public static void main(String[] args) throws InterruptedException {
+		Enter e = new Enter();
+		e.launch();
+		e.senddata();
+	
+	}
+
+}

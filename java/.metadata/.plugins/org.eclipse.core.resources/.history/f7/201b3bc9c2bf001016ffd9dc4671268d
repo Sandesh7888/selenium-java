@@ -1,0 +1,39 @@
+package Object_Repo;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import com.github.dockerjava.api.model.Driver;
+
+public class SelectDrop {
+	WebDriver d;
+	public void launch() throws InterruptedException {
+		d=new ChromeDriver();
+		d.get("https://amazon.com/");
+		Thread.sleep(2000);
+		d.manage().window().maximize();
+		
+		
+		
+		
+	}
+	
+	public void Enter_data() throws InterruptedException {
+		d.findElement(By.name("UserFirstName")).sendKeys("ram");
+		Thread.sleep(2000);
+		d.findElement(By.name("UserFirstName")).sendKeys("ram");
+		Thread.sleep(2000);
+	}
+	
+	
+
+	public static void main(String[] args) throws InterruptedException {
+		System.out.println("main star");
+		SelectDrop n=new SelectDrop();
+		n.launch();
+
+		System.out.println("main end");
+	}
+
+}

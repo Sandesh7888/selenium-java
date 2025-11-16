@@ -1,0 +1,24 @@
+package Object_Repo;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import com.github.dockerjava.api.model.Driver;
+
+public class Navigation {
+	WebDriver d;
+	public void launch() {
+		d=new ChromeDriver();
+		d.get(null);
+		Thread.sleep(2000);
+		d.manage().window().maximize();
+		
+		
+	}
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

@@ -1,0 +1,23 @@
+package Object_Repo;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class ChlidPage {
+
+	WebDriver driver;
+
+    public void launch() throws InterruptedException {
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.get("https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select_multiple");
+        Thread.sleep(2000);
+    }
+    
+    
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

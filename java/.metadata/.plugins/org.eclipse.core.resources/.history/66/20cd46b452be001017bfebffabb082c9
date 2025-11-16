@@ -1,0 +1,22 @@
+package Object_Repo;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class POM {
+
+	WebDriver driver;
+	
+	public void launch() {
+		driver=new ChromeDriver();
+		driver.get("htts://amazon.in");
+		driver.manage().window().maximize();
+		Thread.sleep(2000);
+	}
+	
+	public static void main(String[] args) {
+		
+
+	}
+
+}

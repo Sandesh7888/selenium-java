@@ -1,0 +1,26 @@
+package Object_Repo;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class FrameUse {
+	  WebDriver driver;
+	    
+	    public void launch() throws InterruptedException {
+	        driver = new ChromeDriver();
+	        driver.get("https://www.mahadiscom.in/solar_MTSKPY/scheme_info.php");
+	        Thread.sleep(2000);
+	        driver.manage().window().maximize();
+	    }
+	    
+	    
+	    public void isMultiple() {
+	    	
+	    }
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,56 @@
+package Object_Repo;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class FrameUse {
+	  WebDriver driver;
+	    
+	    public void launch() throws InterruptedException {
+	        driver = new ChromeDriver();
+	        driver.get("https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_select");
+	        Thread.sleep(2000);
+	        driver.manage().window().maximize();
+	    }
+	    
+	    
+	    public void isMultiple() throws InterruptedException {
+	    	driver.switchTo().frame("isFrameResult");
+	    	
+	    	WebElement con=driver.findElement(By.id("cars"));
+	    	
+	    	Select s=new Select(con);
+	    
+	    	if(s.isMultiple()) {
+	    		s.selectByVisibleText("Audi");
+	    		Thread.sleep(2000);
+	    		s.selectByValue("volvo");
+	    		Thread.sleep(2000);
+	    		List<WebElement> allOpt=s.getAllSelectedOptions();
+	    		
+	    		for(int i=0;i<allOpt.size();i++){
+	    			String data =allOpt.get(i).getText();
+	    			System.out.println("valaue  "+ data);
+	    			
+	    		}
+	    		
+	    		s.selectByVisibleText("Audi");
+	    		Thread.sleep(2000);
+	    		s.deselectAll();
+	    		Thread.sleep(2000);
+	    	}
+	    	driver.switchTo().defaultContent();
+	    }
+
+	public static void main(String[] args) throws InterruptedException {
+		FrameUse s=new FrameUse();
+		s.launch();
+		s.isMultiple();
+	}
+
+}

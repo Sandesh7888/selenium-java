@@ -1,0 +1,34 @@
+package Object_Repo;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import com.github.dockerjava.api.model.Driver;
+
+public class select {
+	WebDriver d;
+	public void launch() throws InterruptedException {
+		d=new ChromeDriver();
+		d.get("https://amazon.com/");
+		Thread.sleep(2000);
+		d.manage().window().maximize();
+		navi();
+		
+		
+		
+	}
+	public void navi() {
+		d.navigate().back();
+		d.navigate().forward();
+		d.navigate().refresh();
+	}
+
+	public static void main(String[] args) throws InterruptedException {
+		System.out.println("main star");
+		select n=new select();
+		n.launch();
+		n.navi();
+		System.out.println("main end");
+	}
+
+}

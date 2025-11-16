@@ -1,0 +1,22 @@
+package com.action;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Enter {
+	
+	WebDriver driver;
+	public void launch() throws InterruptedException {
+		driver=new ChromeDriver();
+		driver.get("");
+		driver.manage().window().maximize();
+		Thread.sleep(2000);
+	}
+
+	public static void main(String[] args) {
+		Enter e = new Enter();
+		e.launch();
+	
+	}
+
+}

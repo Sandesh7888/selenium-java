@@ -1,0 +1,55 @@
+package Object_Repo;
+
+import java.util.List;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class FrameUse {
+    WebDriver driver;
+
+    public void launch() throws InterruptedException {
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.get("https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select_multiple");
+        Thread.sleep(2000);
+    }
+
+    public void isMultiple() throws InterruptedException {
+        // Switch to the iframe
+        driver.switchTo().frame("iframeResult");
+
+        WebElement con = driver.findElement(By.id("cars"));
+        Select s = new Select(con);
+
+        if (s.isMultiple()) {
+            s.selectByVisibleText("Audi");
+            Thread.sleep(1000);
+            s.selectByValue("volvo");
+            Thread.sleep(1000);
+
+            List<WebElement> allOpt = s.getAllSelectedOptions();
+            for (WebElement option : allOpt) {
+                System.out.println("Selected value: " + option.getText());
+            }
+
+            Thread.sleep(1000);
+            s.deselectAll();
+        } else {
+            System.out.println("The dropdown is not multiple-select.");
+        }
+
+        driver.switchTo().defaultContent();
+        Thread.sleep(1000);
+        driver.quit();
+    }
+
+    public static void main(String[] args) throws InterruptedException {
+    	System.out.println("MB");
+        FrameUse s = new FrameUse();
+        s.launch();
+        s.isMultiple();
+    }
+}

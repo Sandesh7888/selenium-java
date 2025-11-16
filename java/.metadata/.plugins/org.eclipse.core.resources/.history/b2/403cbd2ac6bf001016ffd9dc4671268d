@@ -1,0 +1,17 @@
+package Object_Repo;
+
+import org.openqa.selenium.WebDriver;
+
+public class AlterBox {
+	WebDriver driver ;
+	public void launch() {
+		driver.get(null);
+		driver.window().manage().
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

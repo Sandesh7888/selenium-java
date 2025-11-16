@@ -1,6 +1,0 @@
-package com.me;
-
-public class FirstDemo {
-	
-public static void main(String []arg) {}
-}

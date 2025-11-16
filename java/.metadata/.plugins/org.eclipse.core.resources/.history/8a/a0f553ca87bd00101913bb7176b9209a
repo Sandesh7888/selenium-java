@@ -1,0 +1,34 @@
+package com.sandesh.me;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Sadbasics_Exp_11logintesting {
+	
+	WebDriver driver;
+	public void Launch() throws InterruptedException {
+		driver = new ChromeDriver();
+		driver.get("https://login.salesforce.com/");
+		Thread.sleep(2000);
+		driver.manage().window().maximize();
+	}
+	
+	public void Login() throws InterruptedException {
+		driver.findElement(By.id("username")).sendKeys("sandesh@123");
+		Thread.sleep(2000);
+		driver.findElement(By.id("password")).sendKeys("123455");
+		Thread.sleep(2000);
+		driver.findElement(By.id("Login")).click();
+		
+	}
+
+	
+	public static void main(String[] args) throws InterruptedException {
+		Sadbasics_Exp_11logintesting s=new Sadbasics_Exp_11logintesting();
+		s.Launch();
+		s.Login();
+		
+	}	
+
+}
