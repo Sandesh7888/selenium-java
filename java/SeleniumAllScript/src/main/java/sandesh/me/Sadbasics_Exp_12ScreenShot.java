@@ -1,4 +1,4 @@
-package com.sandesh.me;
+package sandesh.me;
 
 import java.io.File;
 import java.io.IOException;

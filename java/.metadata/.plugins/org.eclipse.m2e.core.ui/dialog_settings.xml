@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\sande\OneDrive\Desktop\selenium\java\TestNG\src\test\java"/>
 			<item value="C:\Users\sande\OneDrive\Desktop\selenium\java\SeleniumAllScript\src\main\java\com\sandesh\me\Sadbasics_Exp_12ScreenShot.java"/>
 			<item value="C:\Users\sande\OneDrive\Desktop\selenium\java\DemoSelenium"/>
 			<item value="C:\Users\sande\OneDrive\Desktop\selenium\java\FirstProject"/>
@@ -46,16 +47,10 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="com.sandesh.me"/>
-			<item value="com.demo"/>
-			<item value="com.qsp"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="SeleniumAllScript"/>
-			<item value="P1_selenium"/>
-			<item value="DemoSelenium"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

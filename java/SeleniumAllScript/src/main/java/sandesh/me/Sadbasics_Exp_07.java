@@ -1,4 +1,4 @@
-package com.sandesh.me;
+package sandesh.me;
 
 public class Sadbasics_Exp_07 {
 

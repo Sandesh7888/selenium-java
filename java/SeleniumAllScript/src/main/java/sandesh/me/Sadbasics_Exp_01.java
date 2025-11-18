@@ -1,4 +1,4 @@
-package com.sandesh.me;
+package sandesh.me;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

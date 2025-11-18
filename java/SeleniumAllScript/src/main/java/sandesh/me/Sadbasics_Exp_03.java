@@ -1,4 +1,4 @@
-package com.sandesh.me;
+package sandesh.me;
 
 import java.util.Scanner;
 
