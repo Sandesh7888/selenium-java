@@ -25,14 +25,3 @@ public class Navigation {
 		d.navigate().forward();
 		Thread.sleep(2000);
 		d.navigate().refresh();
-	}
-
-	public static void main(String[] args) throws InterruptedException {
-		System.out.println("main star");
-		Navigation n=new Navigation();
-		n.launch();
-		n.navi();
-		System.out.println("main end");
-	}
-
-}
