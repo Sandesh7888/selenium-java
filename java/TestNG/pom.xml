@@ -33,6 +33,13 @@
 	    <artifactId>maven-surefire-plugin</artifactId>
 	    <version>3.5.4</version>
 	</dependency>
+	    <!-- WebDriverManager (auto-manages Chrome, Edge, Firefox drivers) -->
+    <dependency>
+        <groupId>io.github.bonigarcia</groupId>
+        <artifactId>webdrivermanager</artifactId>
+        <version>5.9.2</version>
+    </dependency>
+
 	
 	<!-- https://mvnrepository.com/artifact/org.apache.maven/maven-core -->
 	<dependency>
@@ -40,5 +47,17 @@
 	    <artifactId>maven-core</artifactId>
 	    <version>4.0.0-rc-4</version>
 	</dependency>
+	<dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-api</artifactId>
+    <version>2.21.1</version>
+</dependency>
+
+<dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-core</artifactId>
+    <version>2.21.1</version>
+</dependency>
+
   </dependencies>
 </project>

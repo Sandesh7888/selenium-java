@@ -2,24 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-18T20:01:18 IST" name="Default suite" finished-at="2025-11-18T20:01:34 IST" duration-ms="16025">
+  <suite started-at="2025-11-23T16:03:38 IST" name="Default suite" finished-at="2025-11-23T16:03:41 IST" duration-ms="3090">
     <groups>
     </groups>
-    <test started-at="2025-11-18T20:01:18 IST" name="Default test" finished-at="2025-11-18T20:01:34 IST" duration-ms="16025">
-      <class name="com.scripts.Amzon_Script">
-        <test-method is-config="true" signature="launch()[pri:0, instance:com.scripts.Amzon_Script@20d525]" started-at="2025-11-18T20:01:18 IST" name="launch" finished-at="2025-11-18T20:01:31 IST" duration-ms="12463" status="PASS">
+    <test started-at="2025-11-23T16:03:38 IST" name="Default test" finished-at="2025-11-23T16:03:41 IST" duration-ms="3090">
+      <class name="com.scripts.DataProviderInEx">
+        <test-method signature="data_provider()[pri:0, instance:com.scripts.DataProviderInEx@6a03bcb1]" started-at="2025-11-23T16:03:38 IST" name="data_provider" finished-at="2025-11-23T16:03:41 IST" duration-ms="2937" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launch -->
-        <test-method signature="Amazon_Scrip()[pri:0, instance:com.scripts.Amzon_Script@20d525]" started-at="2025-11-18T20:01:31 IST" name="Amazon_Scrip" finished-at="2025-11-18T20:01:33 IST" duration-ms="2583" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Amazon_Scrip -->
-        <test-method is-config="true" signature="Close()[pri:0, instance:com.scripts.Amzon_Script@20d525]" started-at="2025-11-18T20:01:33 IST" name="Close" finished-at="2025-11-18T20:01:34 IST" duration-ms="900" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Close -->
-      </class> <!-- com.scripts.Amzon_Script -->
+        </test-method> <!-- data_provider -->
+      </class> <!-- com.scripts.DataProviderInEx -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
