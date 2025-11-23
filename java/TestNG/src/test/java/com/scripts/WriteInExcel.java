@@ -11,7 +11,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class WriteInExcel {
 	
 	public static void Write(String  sheetname,String cellvalue,int row,int cell) throws IOException {
-		String excel_path="C:\\Users\\sande\\OneDrive\\Desktop\\selenium\\java\\Book2.xlsx";
+		String excel_path="C:\\Users\\sande\\OneDrive\\Desktop\\selenium\\java\\propeties File\\Book2.xlsx";
 		File f=new File(excel_path);
 		
 		FileInputStream fi=new FileInputStream(f);
