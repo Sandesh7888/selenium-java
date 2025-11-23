@@ -36,15 +36,13 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="src" path="target/generated-sources/annotations">
-		<attributes>
-			<attribute name="optional" value="true"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="src" output="target/test-classes" path="target/generated-test-sources/test-annotations">
 		<attributes>
 			<attribute name="test" value="true"/>
 			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="ignore_optional_problems" value="true"/>
+			<attribute name="m2e-apt" value="true"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/sande/OneDrive/Desktop/selenium/poi-bin-5.2.3-20220909/poi-bin-5.2.3/poi-5.2.3.jar"/>
@@ -97,5 +95,10 @@
 	<classpathentry kind="lib" path="C:/Users/sande/OneDrive/Desktop/selenium/poi-bin-5.2.3-20220909/poi-bin-5.2.3/auxiliary/xml-apis-ext-1.3.04.jar"/>
 	<classpathentry kind="lib" path="C:/Users/sande/OneDrive/Desktop/selenium/poi-bin-5.2.3-20220909/poi-bin-5.2.3/auxiliary/xmlgraphics-commons-2.6.jar"/>
 	<classpathentry kind="lib" path="C:/Users/sande/OneDrive/Desktop/selenium/poi-bin-5.2.3-20220909/poi-bin-5.2.3/auxiliary/xmlsec-3.0.0.jar"/>
+	<classpathentry kind="src" path="target/generated-sources/annotations">
+		<attributes>
+			<attribute name="optional" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
